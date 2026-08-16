@@ -1,0 +1,46 @@
+.resume-completeness-card {
+    background: #111827;
+    border: 1px solid #2b3b55;
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 30px;
+    color: white;
+}
+
+.resume-completeness-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.overall-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overall-score span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #36d399;
+}
+
+.overall-score p {
+    margin-top: 8px;
+    color: #9ca3af;
+}
+
+.section-list {
+    margin-top: 30px;
+}
+
+.section-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #2b3b55;
+}
+
+.section-row:last-child {
+    border-bottom: none;
+}
