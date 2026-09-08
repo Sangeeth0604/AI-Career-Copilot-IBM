@@ -10,9 +10,9 @@ export default function Recommendations({ missingSkills = [], targetRole = "" })
       <div className="section-title-row">
         <div>
           <span className="eyebrow-tag ibm-tag">IBM SkillsBuild Alignment</span>
-          <h2>Recommended IBM SkillsBuild Courses</h2>
+          <h2>IBM SkillsBuild Learning Recommendations</h2>
           <p className="section-subtext">
-            Bridge your specific skill gaps with industry-recognized courses and credentials from IBM SkillsBuild.
+            Bridge your specific skill gaps with industry-recognized learning pathways and credentials from IBM SkillsBuild.
           </p>
         </div>
 
@@ -27,17 +27,21 @@ export default function Recommendations({ missingSkills = [], targetRole = "" })
           <div className="ibm-course-card" key={course.id}>
             <div className="ibm-course-top">
               <span className="ibm-course-category">{course.category}</span>
-              <span className="ibm-course-duration">{course.duration}</span>
+              {course.duration && (
+                <span className="ibm-course-duration">{course.duration}</span>
+              )}
             </div>
 
             <h3 className="ibm-course-title">{course.title}</h3>
             <p className="ibm-course-desc">{course.description}</p>
 
-            <div className="ibm-course-meta">
-              <span className="ibm-badge-label">
-                Credential: <strong>{course.badge}</strong>
-              </span>
-            </div>
+            {course.badge && (
+              <div className="ibm-course-meta">
+                <span className="ibm-badge-label">
+                  Credential: <strong>{course.badge}</strong>
+                </span>
+              </div>
+            )}
 
             {course.matchedSkills && course.matchedSkills.length > 0 && (
               <div className="ibm-gap-target">
