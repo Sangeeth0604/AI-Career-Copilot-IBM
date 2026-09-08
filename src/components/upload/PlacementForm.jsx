@@ -1,4 +1,4 @@
-export default function PlacementForm({ formData, setFormData }) {
+export default function PlacementForm({ formData, setFormData, onLoadDemo }) {
   function handleChange(e) {
     setFormData({
       ...formData,
@@ -8,7 +8,19 @@ export default function PlacementForm({ formData, setFormData }) {
 
   return (
     <div>
-      <h2>Placement Details</h2>
+      <div className="form-header-row">
+        <h2>Placement Details</h2>
+        {onLoadDemo && (
+          <button
+            type="button"
+            className="btn-load-demo"
+            onClick={onLoadDemo}
+            title="Load demo candidate profile for hackathon demonstration"
+          >
+            ⚡ Load Demo Profile
+          </button>
+        )}
+      </div>
 
       <input
         name="studentName"
@@ -56,6 +68,13 @@ export default function PlacementForm({ formData, setFormData }) {
         type="date"
         name="deadline"
         value={formData.deadline}
+        onChange={handleChange}
+      />
+
+      <input
+        name="githubUrl"
+        placeholder="GitHub Profile URL (e.g. https://github.com/username)"
+        value={formData.githubUrl || ""}
         onChange={handleChange}
       />
     </div>

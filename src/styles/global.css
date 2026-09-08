@@ -519,3 +519,1449 @@ body {
   }
 }
 
+/* ==========================================================================
+   IBM Career Copilot: Common Typography & Section Headers
+   ========================================================================== */
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.eyebrow-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.ibm-tag {
+  color: #60a5fa !important;
+}
+
+.section-subtext {
+  color: #94a3b8;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   P0.7: Unified Career Readiness Banner
+   ========================================================================== */
+.readiness-banner {
+  background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 60%, #172554 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.readiness-main {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.readiness-score-ring {
+  min-width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+  border: 4px solid #6366f1;
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.readiness-value {
+  font-size: 44px;
+  font-weight: 800;
+  color: #f8fafc;
+  line-height: 1;
+}
+
+.readiness-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a5b4fc;
+  margin-top: 4px;
+}
+
+.readiness-info {
+  flex: 1;
+}
+
+.readiness-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.readiness-eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a5b4fc;
+}
+
+.readiness-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.readiness-ready {
+  background: rgba(34, 197, 94, 0.16);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.readiness-moderate {
+  background: rgba(234, 179, 8, 0.16);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.35);
+}
+
+.readiness-developing {
+  background: rgba(249, 115, 22, 0.16);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.35);
+}
+
+.readiness-advice {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 6px 0 16px;
+}
+
+.readiness-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.breakdown-pill {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.breakdown-pill span {
+  color: #94a3b8;
+}
+
+.breakdown-pill strong {
+  color: #f1f5f9;
+}
+
+@media (max-width: 850px) {
+  .readiness-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .readiness-header-row {
+    justify-content: center;
+  }
+  .readiness-breakdown {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   P0.2: Career Path Recommendations
+   ========================================================================== */
+.career-paths-card {
+  margin-top: 24px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.career-card {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+.career-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.career-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.career-score {
+  font-size: 13px;
+  font-weight: 800;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.career-card h3 {
+  font-size: 19px;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.career-card p {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.career-skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.career-section-label {
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.career-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.career-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.career-tag.matched {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.career-tag.to-gain {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.career-tag.neutral {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   P0.3: Skill Gap Closing Roadmap
+   ========================================================================== */
+.roadmap-card {
+  margin-top: 24px;
+}
+
+.roadmap-skills-pill {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.roadmap-skills-pill span {
+  color: #94a3b8;
+}
+
+.roadmap-skills-pill strong {
+  color: #f59e0b;
+}
+
+.roadmap-stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.roadmap-step-btn {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: left;
+  cursor: pointer;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+
+.roadmap-step-btn:hover {
+  border-color: #38bdf8;
+}
+
+.roadmap-step-btn.active {
+  background: #1e293b;
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.step-number {
+  font-size: 12px;
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.step-phase {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.step-title {
+  font-size: 13px;
+  color: #f8fafc;
+  line-height: 1.3;
+}
+
+.roadmap-detail-panel {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.roadmap-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.roadmap-week-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.roadmap-detail-header h3 {
+  font-size: 20px;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.roadmap-focus-desc {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.roadmap-meta-badge {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.roadmap-meta-badge span {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.roadmap-meta-badge strong {
+  font-size: 14px;
+  color: #38bdf8;
+}
+
+.roadmap-task-list h4 {
+  font-size: 14px;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+}
+
+.roadmap-task-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.roadmap-task-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.task-bullet {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.roadmap-milestone-box {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #e2e8f0;
+  font-size: 13px;
+}
+
+.roadmap-milestone-box strong {
+  color: #38bdf8;
+}
+
+@media (max-width: 850px) {
+  .roadmap-stepper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   P0.4: IBM SkillsBuild Course Recommendations
+   ========================================================================== */
+.ibm-recommendations-card {
+  margin-top: 24px;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.ibm-badge-pill {
+  background: #172554;
+  border: 1px solid #3b82f6;
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.ibm-badge-pill span {
+  color: #93c5fd;
+}
+
+.ibm-badge-pill strong {
+  color: #ffffff;
+}
+
+.ibm-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.ibm-course-card {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.ibm-course-card:hover {
+  transform: translateY(-3px);
+  border-color: #60a5fa;
+}
+
+.ibm-course-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ibm-course-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.ibm-course-duration {
+  font-size: 12px;
+  color: #cbd5e1;
+  background: #1e293b;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.ibm-course-title {
+  font-size: 18px;
+  color: #f8fafc;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.ibm-course-desc {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ibm-course-meta {
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.ibm-badge-label strong {
+  color: #60a5fa;
+}
+
+.ibm-gap-target {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ibm-gap-target span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f59e0b;
+}
+
+.ibm-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ibm-skill-tag {
+  font-size: 11px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.ibm-course-action {
+  margin-top: 8px;
+}
+
+.ibm-enroll-btn {
+  display: block;
+  text-align: center;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.ibm-enroll-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ==========================================================================
+   P0.5 & P0.6: Interactive AI Mock Interview & Feedback
+   ========================================================================== */
+.mock-interview-container {
+  margin-top: 24px;
+  border-color: rgba(168, 85, 247, 0.35);
+}
+
+.interview-toggle-btn {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.interview-toggle-btn:hover {
+  opacity: 0.9;
+}
+
+.interview-body {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interview-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.interview-step-pill {
+  background: #1e1b4b;
+  border: 1px solid #6366f1;
+  color: #c7d2fe;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.interview-topic-tag {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.interview-topic-tag strong {
+  color: #38bdf8;
+}
+
+.interview-question-box {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.q-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a855f7;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.q-prompt {
+  font-size: 17px;
+  color: #f8fafc;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.interview-input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 13px;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.input-hint {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.interview-textarea {
+  width: 100%;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 16px;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.interview-textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.textarea-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.submit-feedback-btn {
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-feedback-btn:hover:not(:disabled) {
+  background: #7e22ce;
+}
+
+.submit-feedback-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback-result-panel {
+  background: #0f172a;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 14px;
+}
+
+.feedback-eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #a855f7;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.feedback-header h3 {
+  margin: 4px 0 0;
+  font-size: 18px;
+  color: #f8fafc;
+}
+
+.feedback-score-badge {
+  text-align: right;
+}
+
+.score-label {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.score-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #4ade80;
+}
+
+.feedback-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.feedback-col {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.feedback-col h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.feedback-col.strengths h4 {
+  color: #4ade80;
+}
+
+.feedback-col.improvements h4 {
+  color: #facc15;
+}
+
+.feedback-col ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.model-answer-box {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 16px;
+  color: #e2e8f0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.model-answer-box strong {
+  display: block;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.interview-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.interview-nav-btn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.interview-nav-btn.primary {
+  background: #2563eb;
+  border-color: #3b82f6;
+  font-weight: 700;
+}
+
+.interview-summary-card {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.summary-score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #1e1b4b;
+  border: 3px solid #a855f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-score-circle strong {
+  font-size: 32px;
+  color: #f8fafc;
+}
+
+.summary-score-circle span {
+  font-size: 11px;
+  color: #c7d2fe;
+}
+
+.interview-tips-box {
+  text-align: left;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 18px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.interview-tips-box h4 {
+  margin: 0 0 10px;
+  color: #38bdf8;
+  font-size: 14px;
+}
+
+.interview-tips-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.restart-interview-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .feedback-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Public GitHub Developer Activity & Cross-Referencing
+   ========================================================================== */
+.github-analysis-card {
+  margin-top: 24px;
+  border-color: rgba(56, 189, 248, 0.35);
+  background: #0b1329;
+}
+
+.github-card-error {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.github-tag {
+  color: #38bdf8 !important;
+}
+
+.github-source-badge {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.github-source-badge span {
+  color: #94a3b8;
+}
+
+.github-source-badge strong {
+  color: #38bdf8;
+}
+
+.github-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.github-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #38bdf8;
+}
+
+.github-profile-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.github-name-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.github-name-line h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #f8fafc;
+}
+
+.github-handle {
+  color: #38bdf8;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.github-handle:hover {
+  text-decoration: underline;
+}
+
+.github-bio {
+  margin: 6px 0 0;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.github-stat-pill-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.github-stat-pill {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.github-stat-pill span {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.github-stat-pill strong {
+  font-size: 16px;
+  color: #f8fafc;
+}
+
+.github-sub-section {
+  margin-top: 24px;
+}
+
+.github-sub-section h3 {
+  font-size: 17px;
+  color: #f8fafc;
+  margin-bottom: 14px;
+}
+
+.github-lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.github-lang-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.github-lang-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.github-lang-info span {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.github-lang-info strong {
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.github-lang-bar {
+  height: 10px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.github-lang-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  border-radius: 999px;
+}
+
+/* Cross-Referencing Grid */
+.github-crossref-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.github-crossref-header h3 {
+  margin: 0;
+}
+
+.github-truth-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a5b4fc;
+  font-weight: 700;
+}
+
+.github-crossref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.crossref-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.crossref-card.verified {
+  border-color: rgba(34, 197, 94, 0.4);
+  background: rgba(34, 197, 94, 0.04);
+}
+
+.crossref-card.resume-only {
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.crossref-card.github-only {
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.crossref-card.missing-all {
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.crossref-card-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.crossref-badge-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.crossref-card-title strong {
+  display: block;
+  font-size: 14px;
+  color: #f8fafc;
+}
+
+.crossref-card-title span {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.crossref-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.crossref-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.tag-verified {
+  background: rgba(34, 197, 94, 0.16);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+.tag-resume {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.tag-github {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.tag-missing {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.crossref-empty {
+  font-size: 12px;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Recent Repositories Grid */
+.github-repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.github-repo-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.github-repo-card:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+}
+
+.github-repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-repo-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.github-repo-stars {
+  font-size: 12px;
+  color: #eab308;
+}
+
+.github-repo-desc {
+  font-size: 12px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.github-repo-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.github-disclaimer-box {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.github-disclaimer-box strong {
+  color: #38bdf8;
+}
+
+.github-loading-state,
+.github-error-box {
+  padding: 24px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+}
+
+.github-error-msg {
+  color: #f87171;
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.github-fallback-note {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.github-status-pill.error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.github-empty-text {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   Hackathon Demo Mode & Fallback UI
+   ========================================================================== */
+.form-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-header-row h2 {
+  margin: 0;
+}
+
+.btn-load-demo {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-load-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+.error-banner {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.error-banner p {
+  color: #f87171;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-error-fallback {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-error-fallback:hover {
+  background: #1d4ed8;
+}
+
+.demo-profile-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 78, 59, 0.2) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.demo-badge {
+  background: #10b981;
+  color: #022c22;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 8px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.demo-text {
+  font-size: 13px;
+  color: #d1fae5;
+  line-height: 1.5;
+}
+
+.demo-text strong {
+  color: #34d399;
+}
+
+@media (max-width: 600px) {
+  .demo-profile-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
