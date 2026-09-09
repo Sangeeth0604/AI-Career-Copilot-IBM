@@ -74,7 +74,7 @@ export default function useAnalysis() {
       data.append("Upload_Resume__PDF_", resumeFile);
 
       const response = await api.post(
-        "/webhook/ai-placement-assistant",
+        "/webhook/ai-career-copilot-ibm",
         data
       );
 
