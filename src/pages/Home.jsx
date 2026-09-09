@@ -81,8 +81,9 @@ export default function Home() {
       />
 
       {/* Analyze Button */}
-      <div style={{ marginTop: "20px", textAlign: "center" }}>
+      <div className="analyze-action-bar">
         <button
+          className="btn-analyze-resume"
           onClick={handleAnalyze}
           disabled={loading}
         >

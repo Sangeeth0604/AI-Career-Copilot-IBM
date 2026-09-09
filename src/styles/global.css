@@ -1863,6 +1863,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .form-header-row h2 {
@@ -1933,6 +1934,7 @@ body {
   align-items: center;
   gap: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: left;
 }
 
 .demo-badge {
@@ -1963,5 +1965,218 @@ body {
   }
 }
 
+/* ==========================================================================
+   Placement Form & Upload Polish (Dark IBM Theme)
+   ========================================================================== */
+.placement-form-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 22px;
+  padding: 28px;
+  margin-top: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
 
+.form-subtitle {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
 
+.placement-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 20px;
+  margin-top: 20px;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  height: 44px;
+  padding: 10px 16px;
+  background: #0b1120;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  color: #f8fafc;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.form-input:focus {
+  outline: none;
+  background: #0f172a;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.form-date-input {
+  color-scheme: dark;
+  cursor: pointer;
+}
+
+.form-date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8) brightness(1.2);
+  margin-right: 4px;
+}
+
+/* Resume Upload Card */
+.resume-upload-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 22px;
+  padding: 24px 28px;
+  margin-top: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.section-header-compact {
+  margin-bottom: 16px;
+}
+
+.section-header-compact h2 {
+  margin: 0;
+}
+
+.resume-upload-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-file-input {
+  display: inline-block;
+  color: #cbd5e1;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.resume-file-input::file-selector-button {
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 14px;
+  transition: all 0.2s ease;
+}
+
+.resume-file-input::file-selector-button:hover {
+  background: #334155;
+  border-color: #64748b;
+}
+
+.selected-file-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #86efac;
+}
+
+.selected-file-pill .file-name {
+  color: #f8fafc;
+}
+
+/* Analyze Action Button Bar */
+.analyze-action-bar {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-analyze-resume {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all 0.2s ease;
+}
+
+.btn-analyze-resume:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.btn-analyze-resume:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .placement-form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .col-span-full {
+    grid-column: 1;
+  }
+
+  .form-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn-load-demo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-analyze-resume {
+    width: 100%;
+  }
+
+  .resume-upload-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
