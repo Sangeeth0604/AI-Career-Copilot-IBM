@@ -171,7 +171,7 @@ In alignment with the hackathon's Student AI Track requirements, **IBM Bob** was
 * **Architectural Decomposition:** IBM Bob helped plan the transition from a simple placement tool into a full Career Copilot, establishing modular boundaries between live workflow calls and offline fallbacks.
 * **Component Scaffolding:** Bob generated and structured the React 19 components for the `UnifiedScoreCard`, `CareerPathCard`, `SkillRoadmap`, `GitHubAnalysisCard`, and `MockInterview`.
 * **Cross-Referencing Algorithms:** Bob engineered the verification logic in `src/services/github.js` that compares empirical repository language distributions against resume bullet points.
-* **Offline Resilience Engineering:** Bob assisted in designing `demoData.js` and configuring graceful fallback handlers in `useAnalysis.js`, guaranteeing 100% demo uptime.
+* **Offline Resilience Engineering:** Bob assisted in designing `demoData.js` and configuring graceful fallback handlers in `useAnalysis.js`, enabling reliable offline demonstrations when external services are unavailable.
 * **Verification & Linting:** Bob guided code refactoring to achieve zero warnings under `oxlint` and zero errors during `vite build`.
 
 For a complete record of the development journey, prompts, and architectural decisions, see [IBM_BOB_DEV_LOG.md](IBM_BOB_DEV_LOG.md).
