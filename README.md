@@ -169,7 +169,7 @@ Each course recommendation features an official description, skill mappings, est
 In alignment with the hackathon's Student AI Track requirements, **IBM Bob** was utilized as our primary **agentic AI development partner** throughout the software development lifecycle:
 
 * **Architectural Decomposition:** IBM Bob helped plan the transition from a simple placement tool into a full Career Copilot, establishing modular boundaries between live workflow calls and offline fallbacks.
-* **Component Scaffolding:** Bob generated and structured the React 19 components for the `UnifiedScoreCard`, `CareerPathCard`, `SkillRoadmap`, `GitHubAnalysisCard`, and `MockInterview`.
+* **Component Scaffolding: Bob helped generate and structure React components including the UnifiedScoreCard, CareerPathCard, SkillRoadmap, GitHubAnalysisCard, and MockInterview.
 * **Cross-Referencing Algorithms:** Bob engineered the verification logic in `src/services/github.js` that compares empirical repository language distributions against resume bullet points.
 * **Offline Resilience Engineering:** Bob assisted in designing `demoData.js` and configuring graceful fallback handlers in `useAnalysis.js`, enabling reliable offline demonstrations when external services are unavailable.
 * **Verification & Linting:** Bob guided code refactoring to achieve zero warnings under `oxlint` and zero errors during `vite build`.
